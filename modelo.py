@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 from pycaret.classification import load_model, predict_model
 
-st.set_page_config(page_title = 'App FLAI - Powered by Streamlit', 
+st.set_page_config(page_title = 'Calcule o Salário dos Profissionais de Dados - FLAI', 
 				   page_icon = 'iconeflai.png' ,
 				   layout = 'centered', 
 				   initial_sidebar_state = 'auto')
