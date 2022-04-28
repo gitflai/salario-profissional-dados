@@ -82,11 +82,11 @@ st.markdown('---')
 
 st.markdown('## Executar o Modelo de Precificação') 
 
-inflacao = st.checkbox('Levar em consideração a inflação desde a coleta dos dados?')
+inflacao = st.checkbox('Levar em consideração a inflação desde a coleta dos dados? (+20,69%)')
 
 if st.button('CALCULAR O SALÁRIO'):
 	st.markdown('---') 
-	i = 0.1758
+	i = 0.2069
 	saida = float(predict_model(modelo, dados)['Label']) 
 	if inflacao:
 		st.markdown('# Salário estimado de **R$ {:.2f}**'.format((1+i)*saida))
